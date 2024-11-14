@@ -13,7 +13,7 @@ interface CardData {
   icon: React.ReactNode;
 }
 
-const FooterOrganism = () => {
+const Footer = () => {
   const data: CardData[] = [
     {
       icon: <CodeIcon />,
@@ -40,7 +40,7 @@ const FooterOrganism = () => {
     },
   ];
   return (
-    <div className="bg-red-100 flex flex-col gap-11 sm:p-4 md:p-4 lg:p-20">
+    <div className="bg-[#FBFBFB] flex flex-col gap-11 sm:p-4 md:p-4 lg:p-20">
       <div className="flex md:gap-0 sm:gap-4">
         <div className="flex flex-col gap-[18px] w-[40%]">
           <div className="flex flex-col gap-4">
@@ -118,4 +118,4 @@ const FooterOrganism = () => {
   );
 };
 
-export { FooterOrganism };
+export { Footer };
