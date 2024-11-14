@@ -7,17 +7,20 @@ const HeroDetails = () => {
   return (
     <Flex className="flex-1" gap={4} direction="col">
       <Flex className="py-14" gap={4} direction="col">
-        <h1 className="text-5xl font-black text-white">
+        <h1 className="max-sm:text-4xl text-5xl font-black text-white">
           최고의 실력을 가진 외국인 인재를 찾고 계신가요?
         </h1>
-        <h3 className="text-2xl font-black text-white">
+        <h3 className="max-sm:text-lg text-2xl font-black text-white">
           법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.
         </h3>
-        <Link href="/" className="text-lg underline font-black text-white">
+        <Link
+          href="/"
+          className="max-sm:text-base text-lg  underline font-black max-sm:text-yellow-300 text-white"
+        >
           개발자가 필요하신가요?
         </Link>
       </Flex>
-      <Flex className="gap-2" justify="between">
+      <Flex className="max-sm:hidden gap-2" justify="between">
         <DetailCard
           title="평균 월 120만원"
           content="임금을 해당 국가를 기준으로 계산합니다."

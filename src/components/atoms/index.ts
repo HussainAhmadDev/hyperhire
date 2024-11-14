@@ -10,3 +10,4 @@ export * from "./chevron-icon";
 export * from "./container";
 export * from "./flex";
 export * from "./sperator";
+export * from "./hamburger-icon";

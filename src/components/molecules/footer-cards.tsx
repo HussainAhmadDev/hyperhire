@@ -7,12 +7,15 @@ interface FooterCardsProps {
 
 const FooterCards = ({ Icon, title }: FooterCardsProps) => {
   return (
-    <Flex direction="col" gap={4} className="bg-white rounded-xl w-full p-4">
-      <Flex direction="col" gap={3}>
+    <Flex direction="col" gap={4} className="bg-white rounded-xl w-full p-4 ">
+      <Flex direction="col" className="gap-3">
         <Icon />
         <h2 className="font-black text-zinc-700 text-sm">{title}</h2>
       </Flex>
-      <Button className="text-gray-600 text-sm w-fit" variant="text">
+      <Button
+        className="text-gray-600 text-sm w-fit px-0 hover:bg-transparent"
+        variant="text"
+      >
         바로가기
         <ArrowIcon />
       </Button>
