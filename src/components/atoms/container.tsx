@@ -9,7 +9,10 @@ const Container = ({
   DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 >) => {
   return (
-    <div className={cn("p-3 w-full max-w-6xl m-auto", className)} {...props}>
+    <div
+      className={cn("p-3 w-full max-w-[1200px] m-auto", className)}
+      {...props}
+    >
       {children}
     </div>
   );

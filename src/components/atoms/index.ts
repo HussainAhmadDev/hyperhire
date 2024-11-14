@@ -9,3 +9,4 @@ export * from "./white-logo";
 export * from "./chevron-icon";
 export * from "./container";
 export * from "./flex";
+export * from "./sperator";

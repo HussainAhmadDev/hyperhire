@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <Container className="py-3 w-full max-w-6xl items-center flex justify-between m-auto">
       <WhiteLogo />
-      <Flex align="center" gap={10}>
+      <Flex align="center" className="gap-10">
         <Button variant="text">
           문의하기 <ChevronIcon />
         </Button>

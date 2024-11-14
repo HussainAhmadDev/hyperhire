@@ -4,8 +4,9 @@ import { Container } from "../atoms";
 
 const HeroSection = () => {
   return (
-    <Container>
+    <Container className="flex">
       <HeroDetails />
+      <div className="flex-1" />
     </Container>
   );
 };
