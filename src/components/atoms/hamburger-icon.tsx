@@ -1,6 +1,6 @@
 import React from "react";
 
-const HamburgerIcon = () => {
+const HamburgerIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="16"
@@ -8,6 +8,7 @@ const HamburgerIcon = () => {
       viewBox="0 0 16 3"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M1 1.46802H15"
