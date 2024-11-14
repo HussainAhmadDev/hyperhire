@@ -3,7 +3,7 @@ import { Button, ChevronIcon, Container, Flex, WhiteLogo } from "../atoms";
 
 const Header = () => {
   return (
-    <Container className="py-3 w-full max-w-6xl items-center flex justify-around m-auto">
+    <Container className="py-3 w-full max-w-6xl items-center flex justify-between m-auto">
       <WhiteLogo />
       <Flex align="center" gap={10}>
         <Button variant="text">

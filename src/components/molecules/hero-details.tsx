@@ -11,4 +11,4 @@ const HeroDetails = () => {
   );
 };
 
-export default HeroDetails;
+export { HeroDetails };
