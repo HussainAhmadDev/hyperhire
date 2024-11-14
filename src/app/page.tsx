@@ -1,7 +1,7 @@
-import { Home } from "@/ui/home";
+import { HomePage } from "@/components/pages";
 
 const Page = () => {
-  return <Home />;
+  return <HomePage />;
 };
 
 export default Page;
