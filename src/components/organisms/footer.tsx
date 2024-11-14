@@ -40,25 +40,25 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-[#FBFBFB] flex flex-col gap-11 sm:p-4 md:p-4 lg:p-20">
-      <div className="flex md:gap-0 sm:gap-4">
+    <div className="bg-[#FBFBFB] flex flex-col gap-11 max-sm:p-4 md:p-4 lg:p-20">
+      <div className="flex md:flex-row max-sm:flex-col md:gap-0 sm:gap-4">
         <div className="flex flex-col gap-[18px] w-[40%]">
           <div className="flex flex-col gap-4">
             <LogoIcon />
-            <p className="text-sm font-black max-w-[260px]  text-[#343741]">
+            <p className="text-sm font-black max-w-[260px]  text-zinc-700">
               우리는 국가의 장벽을 넘어 최고의 인재를 매칭해드립니다.
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-[13px] font-black  text-[#5E626F]">
+            <h2 className="text-[13px] font-black  text-gray-600">
               010-0000-0000
             </h2>
-            <h3 className="text-[13px] font-black  text-[#5E626F]">
+            <h3 className="text-[13px] font-black  text-gray-600">
               aaaaa@naver.com
             </h3>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
+        <div className="grid max-sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4   gap-4 w-full">
           {data.map((el, ind) => (
             <FooterCards
               key={ind}
@@ -70,50 +70,48 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex">
-        <div className="flex gap-[11px] w-[40%]">
+      <div className="flex md:flex-row max-sm:flex-col md:gap-0 max-sm:gap-9">
+        <div className="flex gap-[11px] md:w-[40%] max-sm:w-full">
           <div className="flex flex-col gap-2.5">
-            <h2 className="text-[#343741] text-xs font-black">상호명</h2>
-            <h3 className="text-[#5E626F] text-[13px] font-black">
+            <h2 className="text-zinc-700 text-xs font-black">상호명</h2>
+            <h3 className="text-gray-600 text-[13px] font-black">
               하이퍼하이어
             </h3>
-            <p className="text-[#5E626F] text-[13px] font-black">
+            <p className="text-gray-600 text-[13px] font-black">
               Hyperhire India Private Limited
             </p>
           </div>
           <div className="flex flex-col gap-2.5">
-            <h2 className="text-[#343741] text-xs font-black">대표 CEO</h2>
-            <h3 className="text-[#5E626F] text-[13px] font-black">김주현</h3>
-            <p className="text-[#5E626F] text-[13px] font-black">Juhyun Kim</p>
+            <h2 className="text-zinc-700 text-xs font-black">대표 CEO</h2>
+            <h3 className="text-gray-600 text-[13px] font-black">김주현</h3>
+            <p className="text-gray-600 text-[13px] font-black">Juhyun Kim</p>
           </div>
         </div>
-        <div className="flex gap-[42px] w-full">
+        <div className="flex md:flex-row max-sm:flex-col gap-[42px] w-full">
           <div className="flex flex-col gap-2.5">
-            <h2 className="text-[#343741] text-xs font-black">
+            <h2 className="text-zinc-700 text-xs font-black">
               사업자등록번호 CIN
             </h2>
-            <h3 className="text-[#5E626F] text-[13px] font-black">
+            <h3 className="text-gray-600 text-[13px] font-black">
               427-86-01187
             </h3>
-            <p className="text-[#5E626F] text-[13px] font-black">
+            <p className="text-gray-600 text-[13px] font-black">
               U74110DL2016PTC290812
             </p>
           </div>
           <div className="flex flex-col gap-2.5">
-            <h2 className="text-[#343741] text-xs font-black">주소 ADDRESS</h2>
-            <h3 className="text-[#5E626F] text-[13px] font-black">
+            <h2 className="text-zinc-700 text-xs font-black">주소 ADDRESS</h2>
+            <h3 className="text-gray-600 text-[13px] font-black">
               서울특별시 강남대로 479, 지하 1층 238호
             </h3>
-            <p className="text-[#5E626F] max-w-[455px] text-[13px] font-black">
+            <p className="text-gray-600 max-w-[455px] text-[13px] font-black">
               D-138, Street number 11, Jagjeet Nagar, North East Delhi, New
               Delhi, 110053 India
             </p>
           </div>
         </div>
       </div>
-      <h2 className="text-[#5E626F] text-[13px] font-black">
-        ⓒ 2023 Hyperhire
-      </h2>
+      <h2 className="text-gray-600 text-[13px] font-black">ⓒ 2023 Hyperhire</h2>
     </div>
   );
 };

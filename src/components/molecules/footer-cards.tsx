@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowIcon } from "../atoms";
+import { ArrowIcon, Button } from "../atoms";
 
 interface FooterCardsProps {
   icon: React.ReactNode;
@@ -9,16 +9,16 @@ interface FooterCardsProps {
 
 const FooterCards = ({ icon, title, buttonText }: FooterCardsProps) => {
   return (
-    <div className="bg-[#fff] rounded-xl w-full flex flex-col gap-4 p-4">
+    <div className="bg-white rounded-xl w-full flex  flex-col gap-4 p-4">
       <div className="flex flex-col gap-3">
         <div>{icon}</div>
-        <h2 className="font-[900] text-[#343741] text-[14px]">{title}</h2>
+        <h2 className="font-black text-zinc-700 text-sm">{title}</h2>
       </div>
       <div>
-        <button className="font-[900] flex items-center gap-1 text-[#5E626F] text-[14px]">
+        <Button className="font-black  px-0 hover:bg-transparent   text-gray-600 text-sm">
           {buttonText}
           <ArrowIcon />
-        </button>
+        </Button>
       </div>
     </div>
   );
