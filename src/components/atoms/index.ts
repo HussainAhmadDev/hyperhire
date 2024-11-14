@@ -4,3 +4,6 @@ export * from "./korean-icon";
 export * from "./setting-icon";
 export * from "./user-icon";
 export * from "./arrow-icon";
+export * from "./button";
+export * from "./white-logo";
+export * from "./chevron-icon";

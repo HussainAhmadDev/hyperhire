@@ -10,6 +10,13 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
+        gradientStart: "var(--hero-gradient-start)",
+        gradientEnd: "var(--hero-gradient-end)",
+        brand: "var(--brand-color)",
+      },
+      backgroundImage: {
+        "hero-gradient":
+          "linear-gradient(90deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%)",
       },
     },
   },
