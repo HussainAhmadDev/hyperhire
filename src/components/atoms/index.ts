@@ -7,3 +7,5 @@ export * from "./arrow-icon";
 export * from "./button";
 export * from "./white-logo";
 export * from "./chevron-icon";
+export * from "./container";
+export * from "./flex";
