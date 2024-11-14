@@ -1,7 +1,8 @@
 import React from "react";
+import { FooterOrganism } from "../organisms";
 
 const HomeTemplate = () => {
-  return <div>HomeTemplate</div>;
+  return <FooterOrganism />;
 };
 
 export { HomeTemplate };
