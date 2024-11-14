@@ -1,17 +1,13 @@
-import React, { PropsWithChildren } from "react";
 import { cn } from "@/utils";
 
 interface FlexProps
-  extends PropsWithChildren<
-    React.DetailedHTMLProps<
-      React.HTMLAttributes<HTMLDivElement>,
-      HTMLDivElement
-    >
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
   > {
-  children: React.ReactNode;
   justify?: "start" | "center" | "end" | "between" | "around";
   align?: "start" | "center" | "end";
-  direction?: "row" | "column";
+  direction?: "row" | "col";
   wrap?: boolean;
   gap?: number;
 }
