@@ -15,21 +15,38 @@ const ProfileCard = ({
 }: ProfileCardProps) => {
   return (
     <Flex
-      className={"bg-white w-[292px] m-auto  rounded-lg shadow-lg p-6 gap-4"}
+      className={"bg-white  rounded-xl shadow-lg p-9 max-sm:gap-4 gap-9"}
       direction="col"
     >
-      <div className="relative inline-block">
-        <Avatar src={picture} alt={name} size={120} className="m-auto" />
-        <div className="w-[120px] absolute bottom-1 right-0.5">
-          <FlagIcon />
+      <Flex direction="col" className="gap-4">
+        <div className="relative  w-[120px] max-sm:w-16 m-auto">
+          <Avatar
+            src={picture}
+            alt={name}
+            size={120}
+            className="m-auto relative max-sm:w-16 "
+          />
+          <div className="absolute bottom-1 right-2">
+            <FlagIcon />
+          </div>
         </div>
-      </div>
+        <Flex direction="col">
+          <h3 className="max-sm:text-sm text-2xl font-black text-center">
+            {name}
+          </h3>
+          <p className="max-sm:text-sm text-brand text-center font-black">
+            {experience}
+          </p>
+        </Flex>
+      </Flex>
 
-      <h3 className="text-2xl font-black text-center">{name}</h3>
-      <p className="text-brand text-center font-black">{experience}</p>
       <Flex gap={1} wrap justify="center">
         {skills?.map((skill, index) => (
-          <Button variant="outlined" key={`${skill}-${index}`}>
+          <Button
+            variant="outlined"
+            className="max-sm:text-sm px-3 py-1"
+            key={`${skill}-${index}`}
+          >
             {skill}
           </Button>
         ))}

@@ -5,7 +5,7 @@ import { DetailCard } from "./detail-card";
 
 const HeroDetails = () => {
   return (
-    <Flex className="max-sm:w-full max-lg:w-2/3 w-1/2" gap={4} direction="col">
+    <Flex className="max-sm:w-full max-lg:w-4/5 w-1/2" gap={4} direction="col">
       <Flex
         className="py-14 animate-fade-in-up duration-500 w-full"
         gap={4}
