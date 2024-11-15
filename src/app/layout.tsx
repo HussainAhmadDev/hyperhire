@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { PropsWithChildren } from "react";
 
 const popoing = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -14,11 +15,7 @@ export const metadata: Metadata = {
   description: "Hyperhire",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={`${popoing.variable} antialiased`}>{children}</body>
