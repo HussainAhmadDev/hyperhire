@@ -12,6 +12,7 @@ export default {
         "fade-in": "fadeIn 500ms ease both",
         "fade-in-up": "fadeInUp 500ms ease both",
         "fade-in-with-delay": "fadeIn 500ms ease 800ms both",
+        "grow-in": "growIn 300ms ease-in-out forwards",
       },
       colors: {
         background: "var(--background)",
@@ -37,6 +38,10 @@ export default {
         fadeInUp: {
           from: { opacity: "0", transform: "translateY(20px)" },
           to: { opacity: "1", transform: "translateY(0)" },
+        },
+        growIn: {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
         },
       },
     },

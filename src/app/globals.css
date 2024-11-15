@@ -57,3 +57,7 @@ body {
          transition-all 
          duration-300;
 }
+
+.arrow-mark {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}

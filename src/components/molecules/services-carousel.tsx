@@ -23,6 +23,7 @@ const ServicesCarousel = () => {
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
+          reverseDirection: true,
         }}
         breakpoints={{
           1280: {

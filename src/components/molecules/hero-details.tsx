@@ -7,14 +7,16 @@ const HeroDetails = () => {
   return (
     <Flex className="w-full max-w-[588px]" gap={4} direction="col">
       <Flex
-        className="py-14 animate-fade-in-up duration-500 w-full"
+        className="pb-14 animate-fade-in-up duration-500 w-full"
         gap={4}
         direction="col"
       >
         <Tooltip
           title="풀타임, 파트타임"
-          className="text-brand-cyan-100 animate-fade-in-with-delay"
+          className="max-sm:text-white text-brand-cyan-100 animate-fade-in-with-delay"
           arrowPlacement="left"
+          tooltipClassName="max-sm:bg-blue-300"
+          arrowClassName="max-sm:bg-blue-300"
         >
           <h1 className="max-sm:text-4xl text-5xl font-black tracking-tighter text-white leading-tight">
             최고의 실력을 가진 <br /> 외국인 인재를 찾고 계신가요?
@@ -25,7 +27,7 @@ const HeroDetails = () => {
         </h3>
         <Link
           href="/"
-          className="max-sm:text-base text-lg  underline font-black max-sm:text-yellow-300 text-white"
+          className="max-sm:hidden inline-block  text-lg underline font-black text-white"
         >
           개발자가 필요하신가요?
         </Link>

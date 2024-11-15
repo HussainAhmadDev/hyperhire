@@ -17,6 +17,8 @@ interface TooltipProps
   title: string | ReactNode;
   defualtOpen?: boolean;
   arrowPlacement?: ArrowPlacement;
+  tooltipClassName?: string;
+  arrowClassName?: string;
 }
 const Tooltip = ({
   title,
@@ -24,6 +26,8 @@ const Tooltip = ({
   children,
   defualtOpen = true,
   arrowPlacement = "center",
+  tooltipClassName,
+  arrowClassName,
   ...props
 }: TooltipProps) => {
   return (
@@ -41,13 +45,19 @@ const Tooltip = ({
         justify="center"
       >
         <div
-          className={cn("bg-white px-3 py-1.5 rounded-lg font-black")}
+          className={cn(
+            "bg-white px-3 py-1.5 rounded-lg font-black",
+            tooltipClassName
+          )}
           {...props}
         >
           {title}
         </div>
         <div
-          className="w-2.5 h-2 bg-white mx-2 -mt-[1px]"
+          className={cn(
+            "w-2.5 h-2 bg-white mx-2 -mt-[1px] arrow-mark",
+            arrowClassName
+          )}
           style={{
             clipPath: "polygon(50% 100%, 0 0, 100% 0)",
           }}

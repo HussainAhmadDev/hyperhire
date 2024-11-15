@@ -1,20 +1,22 @@
 import { cn } from "@/utils";
 import { Button } from "./button";
 import { ChevronIcon } from "./chevron-icon";
-import { PropsWithChildren } from "react";
+import { ComponentProps } from "react";
 
-interface DropdownTriggerProps {
+interface DropdownTriggerProps extends ComponentProps<typeof Button> {
   open: boolean;
   toggleOpen(): void;
 }
 const DropdownTrigger = ({
-  children,
   open,
   toggleOpen,
-}: PropsWithChildren<DropdownTriggerProps>) => {
+  children,
+  ...props
+}: DropdownTriggerProps) => {
   return (
-    <Button variant="texted" onClick={toggleOpen}>
-      {children} <ChevronIcon className={cn({ "rotate-90": open })} />
+    <Button variant="texted" onClick={toggleOpen} {...props}>
+      {children}
+      <ChevronIcon className={cn("transition-all", { "rotate-180": open })} />
     </Button>
   );
 };
