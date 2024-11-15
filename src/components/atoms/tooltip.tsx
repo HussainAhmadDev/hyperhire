@@ -47,7 +47,7 @@ const Tooltip = ({
           {title}
         </div>
         <div
-          className="w-1.5 h-2 bg-white px-2 -mt-[1px]"
+          className="w-2.5 h-2 bg-white mx-2 -mt-[1px]"
           style={{
             clipPath: "polygon(50% 100%, 0 0, 100% 0)",
           }}
