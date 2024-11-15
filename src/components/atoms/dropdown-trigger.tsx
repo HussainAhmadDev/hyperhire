@@ -13,7 +13,7 @@ const DropdownTrigger = ({
   toggleOpen,
 }: PropsWithChildren<DropdownTriggerProps>) => {
   return (
-    <Button variant="text" onClick={toggleOpen}>
+    <Button variant="texted" onClick={toggleOpen}>
       {children} <ChevronIcon className={cn({ "rotate-90": open })} />
     </Button>
   );
