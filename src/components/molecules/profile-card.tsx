@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Button, Flex } from "../atoms";
+import { Avatar, Button, Flex } from "../atoms";
 
 interface ProfileCardProps {
   picture: string;
@@ -15,14 +14,11 @@ const ProfileCard = ({
   skills,
 }: ProfileCardProps) => {
   return (
-    <div className={"bg-white w-[292px] rounded-lg shadow-lg p-6 "}>
-      <Image
-        src={picture}
-        alt={name}
-        width={200}
-        height={200}
-        className="!w-full"
-      />
+    <Flex
+      className={"bg-white w-full rounded-lg shadow-lg p-6 gap-4"}
+      direction="col"
+    >
+      <Avatar src={picture} alt={name} size={120} className="m-auto" />
       <h3 className="text-2xl font-black text-center">{name}</h3>
       <p className="text-brand text-center font-black">{experience}</p>
       <Flex gap={2} wrap justify="center">
@@ -32,7 +28,7 @@ const ProfileCard = ({
           </Button>
         ))}
       </Flex>
-    </div>
+    </Flex>
   );
 };
 

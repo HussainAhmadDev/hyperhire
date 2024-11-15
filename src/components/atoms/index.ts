@@ -16,3 +16,4 @@ export * from "./image-icon";
 export * from "./box-icon";
 export * from "./call-icon";
 export * from "./target-icon";
+export * from "./avatar";

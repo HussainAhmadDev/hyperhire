@@ -5,7 +5,7 @@ import { DetailCard } from "./detail-card";
 
 const HeroDetails = () => {
   return (
-    <Flex className="flex-1" gap={4} direction="col">
+    <Flex className="w-1/2" gap={4} direction="col">
       <Flex className="py-14" gap={4} direction="col">
         <h1 className="max-sm:text-4xl text-5xl font-black text-white">
           최고의 실력을 가진 외국인 인재를 찾고 계신가요?

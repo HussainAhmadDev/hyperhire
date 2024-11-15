@@ -1,40 +1,29 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
-import {
-  Pagination,
-  Autoplay,
-  Navigation,
-  EffectCoverflow,
-} from "swiper/modules";
+import { Pagination, Navigation, EffectCoverflow } from "swiper/modules";
 import { ProfileCard } from "./profile-card";
 
 const ProfilesCarousel = () => {
   return (
-    <section className="h-fit max-w-[600px] w-full">
+    <section className="h-fit w-1/2">
       <Swiper
-        loop={false}
-        speed={1000}
+        speed={700}
         effect="coverflow"
         centeredSlides={true}
         grabCursor={true}
-        slidesPerView={3}
+        slidesPerView={1.75}
         coverflowEffect={{
           rotate: 10,
-          stretch: 100,
-          depth: 210,
+          stretch: 0,
+          depth: 1000,
           modifier: 1,
           slideShadows: true,
-          scale: 0.9,
+          scale: 1,
         }}
         initialSlide={1}
         navigation
-        modules={[Pagination, Autoplay, Navigation, EffectCoverflow]}
-        className="px-6"
+        modules={[Pagination, Navigation, EffectCoverflow]}
       >
         <SwiperSlide>
           <ProfileCard {...profile} />
@@ -53,7 +42,7 @@ const ProfilesCarousel = () => {
 const profile = {
   experience: "마케팅 · 2y+",
   name: "Abhishek Gupta",
-  picture: "https://via.placeholder.com/150",
+  picture: "/profile.png",
   skills: [
     "마케팅 콘텐츠 제작",
     "인스타그램 관리",

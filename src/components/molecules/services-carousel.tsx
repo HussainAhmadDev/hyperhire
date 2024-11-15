@@ -2,7 +2,6 @@
 
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { ServiceCard } from "./service-card";
 import {
   BoxIcon,
