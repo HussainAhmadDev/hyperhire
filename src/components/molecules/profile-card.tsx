@@ -16,7 +16,7 @@ const ProfileCard = ({
   tooltipTitle,
 }: ProfileCardProps) => {
   return (
-    <Flex direction="col" align="center" gap={3}>
+    <Flex direction="col" align="center" justify="center" gap={3}>
       <Tooltip
         title={
           <Flex className="min-w-max gap-2.5  items-center">
@@ -27,7 +27,7 @@ const ProfileCard = ({
       />
       <Flex
         className={
-          "bg-white  rounded-xl shadow-lg p-9 max-sm:p-3 max-sm:gap-4 gap-9"
+          "bg-white rounded-xl shadow-lg p-9 max-sm:p-9 max-sm:!w-[234px] max-sm:gap-4 gap-9"
         }
         direction="col"
       >

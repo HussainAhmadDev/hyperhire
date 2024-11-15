@@ -25,6 +25,7 @@ const ProfilesCarousel = () => {
         initialSlide={1}
         navigation
         modules={[Pagination, Navigation, EffectCoverflow]}
+        className="max-sm:!p-10 max-sm:!py-20 !py-20"
       >
         <SwiperSlide>
           <ProfileCard {...profile} />
