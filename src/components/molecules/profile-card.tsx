@@ -15,7 +15,7 @@ const ProfileCard = ({
 }: ProfileCardProps) => {
   return (
     <Flex
-      className={"bg-white w-full rounded-lg shadow-lg p-6 gap-4"}
+      className={"bg-white w-[292px] m-auto  rounded-lg shadow-lg p-6 gap-4"}
       direction="col"
     >
       <div className="relative inline-block">
@@ -27,7 +27,7 @@ const ProfileCard = ({
 
       <h3 className="text-2xl font-black text-center">{name}</h3>
       <p className="text-brand text-center font-black">{experience}</p>
-      <Flex gap={2} wrap justify="center">
+      <Flex gap={1} wrap justify="center">
         {skills?.map((skill, index) => (
           <Button variant="outlined" key={`${skill}-${index}`}>
             {skill}

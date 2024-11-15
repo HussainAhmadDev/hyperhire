@@ -17,3 +17,12 @@ body {
   background: white;
   font-family: var(--font-poppins);
 }
+.swiper-button-prev {
+  position: absolute;
+  left: 0 !important;
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 0 !important;
+}
