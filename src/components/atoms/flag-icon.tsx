@@ -1,6 +1,6 @@
 import React from "react";
 
-const flagIcon = () => {
+const FlagIcon = () => {
   return (
     <svg
       width="25"
@@ -34,4 +34,4 @@ const flagIcon = () => {
   );
 };
 
-export { flagIcon };
+export { FlagIcon };
