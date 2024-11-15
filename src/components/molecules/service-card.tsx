@@ -8,7 +8,7 @@ interface ServiceCardProps {
 const ServiceCard = ({ icon, title }: ServiceCardProps) => {
   return (
     <Flex
-      className="bg-white/20 hover:bg-white/40 hover:shadow-white cursor-pointer transition-all rounded-xl w-full gap-6 p-4"
+      className="bg-white/20 hover:bg-white/40 hover:shadow-white cursor-pointer transition-all rounded-xl w-full gap-6 p-4 animate-fade-in duration-500"
       align="center"
     >
       <Flex

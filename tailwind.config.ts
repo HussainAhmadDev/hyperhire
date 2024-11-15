@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        "fade-in": "fadeIn var(--tw-duration, 1s) ease both",
+        "fade-in-up": "fadeInUp var(--tw-duration, 1s) ease both",
+      },
       colors: {
         background: "var(--background)",
         gradientStart: "var(--hero-gradient-start)",
@@ -19,6 +23,16 @@ export default {
       backgroundImage: {
         "hero-gradient":
           "linear-gradient(90deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%)",
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        fadeInUp: {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
     },
   },
