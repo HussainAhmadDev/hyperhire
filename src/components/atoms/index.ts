@@ -23,3 +23,4 @@ export * from "./checkbox";
 export * from "./dropdown-item";
 export * from "./dropdown-list";
 export * from "./dropdown-trigger";
+export * from "./dollar-icon";

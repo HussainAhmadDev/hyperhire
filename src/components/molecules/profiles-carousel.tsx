@@ -3,10 +3,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectCoverflow } from "swiper/modules";
 import { ProfileCard } from "./profile-card";
+import { Flex } from "../atoms";
 
 const ProfilesCarousel = () => {
   return (
-    <section className="h-fit max-sm:w-full max-lg:w-3/4 w-1/2">
+    <Flex className="h-fit w-full max-w-[600px] m-auto">
       <Swiper
         speed={700}
         effect="coverflow"
@@ -30,12 +31,12 @@ const ProfilesCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ProfileCard {...profile} />
-        </SwiperSlide>
+        </SwiperSlide>{" "}
         <SwiperSlide>
           <ProfileCard {...profile} />
         </SwiperSlide>
       </Swiper>
-    </section>
+    </Flex>
   );
 };
 
@@ -49,5 +50,6 @@ const profile = {
     "트위터 관리",
     "블로그 글 작성",
   ],
+  tooltipTitle: "월 100만원",
 };
 export { ProfilesCarousel };
