@@ -1,4 +1,4 @@
-import { Avatar, Button, FlagIcon, Flex, Tooltip, TooltipIcon } from "../atoms";
+import { Avatar, Button, FlagIcon, Flex, Tooltip, DollarIcon } from "../atoms";
 
 interface ProfileCardProps {
   picture: string;
@@ -20,10 +20,10 @@ const ProfileCard = ({
       <Tooltip
         title={
           <Flex className="min-w-max gap-2.5  items-center">
-            <TooltipIcon /> {tooltipTitle}
+            <DollarIcon /> {tooltipTitle}
           </Flex>
         }
-        className="text-teal-500  "
+        className="text-teal-500"
       />
       <Flex
         className={
