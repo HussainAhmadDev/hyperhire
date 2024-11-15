@@ -6,17 +6,16 @@ import { DetailCard } from "./detail-card";
 const HeroDetails = () => {
   return (
     <Flex className="max-sm:w-full max-lg:w-2/3 w-1/2" gap={4} direction="col">
-      <Flex className="py-14 animate-fade-in-up" gap={4} direction="col">
-        <Tooltip
-          title="풀타임, 파트타임"
-          className="text-brand-cyan-100 animate-fade-in-with-delay"
-        >
-          <h1 className="max-sm:text-4xl text-5xl font-black text-white">
-            최고의 실력을 가진 외국인 인재를 찾고 계신가요?
-          </h1>
-        </Tooltip>
+      <Flex
+        className="py-14 animate-fade-in-up duration-500 w-full"
+        gap={4}
+        direction="col"
+      >
+        <h1 className="max-sm:text-4xl text-5xl font-black text-white">
+          최고의 실력을 가진 <br /> 외국인 인재를 찾고 계신가요?
+        </h1>
         <h3 className="max-sm:text-lg text-2xl font-black text-white">
-          법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.
+          법률 및 인사관리 부담없이 <br /> 1주일 이내에 원격으로 채용해보세요.
         </h3>
         <Link
           href="/"
