@@ -14,7 +14,7 @@ import {
 
 const ServicesCarousel = () => {
   return (
-    <Container aligned="right">
+    <Container aligned="right" className="max-lg:hidden">
       <Swiper
         modules={[Autoplay]}
         slidesPerView={4.5}

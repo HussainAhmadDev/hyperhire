@@ -6,7 +6,7 @@ import { ProfileCard } from "./profile-card";
 
 const ProfilesCarousel = () => {
   return (
-    <section className="h-fit w-1/2">
+    <section className="h-fit max-sm:w-full max-lg:w-2/3 w-1/2">
       <Swiper
         speed={700}
         effect="coverflow"

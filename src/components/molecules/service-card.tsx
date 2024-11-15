@@ -1,5 +1,4 @@
 import { Flex } from "../atoms";
-
 interface ServiceCardProps {
   title: string;
   icon: JSX.Element;
