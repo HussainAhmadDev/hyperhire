@@ -13,6 +13,8 @@ export default {
         gradientStart: "var(--hero-gradient-start)",
         gradientEnd: "var(--hero-gradient-end)",
         brand: "var(--brand-color)",
+        "brand-gray-100": "#C1C5CF",
+        "brand-gray-200": "#5E626F",
       },
       backgroundImage: {
         "hero-gradient":

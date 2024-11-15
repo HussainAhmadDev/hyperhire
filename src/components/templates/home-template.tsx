@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, GradientLayer, Header } from "../organisms";
-import HeroSection from "../organisms/hero";
+import { HeroSection } from "../organisms";
 
 const HomeTemplate = () => {
   return (

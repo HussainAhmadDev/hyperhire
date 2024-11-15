@@ -6,6 +6,8 @@
   --hero-gradient-start: #26c2b9;
   --hero-gradient-end: #288be7;
   --brand-color: #4a77ff;
+  --swiper-navigation-color: #fff;
+  --swiper-navigation-size: 26px !important;
 }
 
 body {

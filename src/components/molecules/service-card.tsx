@@ -5,11 +5,20 @@ interface ServiceCardProps {
   icon: JSX.Element;
 }
 
-const ServiceCard = ({ icon: Icon, title }: ServiceCardProps) => {
+const ServiceCard = ({ icon, title }: ServiceCardProps) => {
   return (
-    <Flex className="bg-white/20 rounded-xl w-full p-4">
-      {Icon}
-      {title}
+    <Flex
+      className="bg-white/20 hover:bg-white/40 hover:shadow-white cursor-pointer transition-all rounded-xl w-full gap-6 p-4"
+      align="center"
+    >
+      <Flex
+        justify="center"
+        align="center"
+        className="bg-white/40 size-14 rounded-lg"
+      >
+        {icon}
+      </Flex>
+      <h3 className="font-black text-2xl text-white">{title}</h3>
     </Flex>
   );
 };

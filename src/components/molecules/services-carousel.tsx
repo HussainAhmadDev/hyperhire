@@ -2,53 +2,53 @@
 
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import { ServiceCard } from "./service-card";
-import { BoxIcon, CallIcon, ImageIcon, MarketingIcon } from "../atoms";
-import { TargetIcon } from "../atoms/target-icon";
+import {
+  BoxIcon,
+  CallIcon,
+  Container,
+  ImageIcon,
+  MarketingIcon,
+  TargetIcon,
+} from "../atoms";
 
 const ServicesCarousel = () => {
   return (
-    <section className="w-full max-w-[1348px] bg-red-200">
+    <Container aligned="right">
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={2.5}
+        slidesPerView={4.5}
         spaceBetween={10}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          1024: {
+            slidesPerView: 4.5,
+          },
+        }}
       >
-        {services.map(({ icon: Icon, title }, index) => (
-          <SwiperSlide key={index}>
-            <ServiceCard icon={<Icon />} title={title} />
-          </SwiperSlide>
-        ))}
+        <SwiperSlide>
+          <ServiceCard icon={<MarketingIcon />} title="해외 마케팅" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceCard icon={<ImageIcon />} title="퍼블리셔" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceCard icon={<BoxIcon />} title="캐드원(제도사)" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceCard icon={<TargetIcon />} title="해외 세일즈" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceCard icon={<CallIcon />} title="해외 CS" />
+        </SwiperSlide>
       </Swiper>
-    </section>
+    </Container>
   );
 };
 
-const services = [
-  {
-    icon: MarketingIcon,
-    title: "해외 마케팅",
-  },
-  {
-    icon: ImageIcon,
-    title: "퍼블리셔",
-  },
-  {
-    icon: BoxIcon,
-    title: "캐드원(제도사)",
-  },
-  {
-    icon: TargetIcon,
-    title: "해외 세일즈",
-  },
-  {
-    icon: CallIcon,
-    title: "해외 CS",
-  },
-];
 export { ServicesCarousel };
