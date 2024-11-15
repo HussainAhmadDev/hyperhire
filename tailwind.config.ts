@@ -26,7 +26,8 @@ export default {
         "brand-blue-100": "var(--brand-blue-100)",
       },
       backgroundImage: {
-        "hero-bg": "url('/hero-gradient-bg.jpg')",
+        "hero-bg":
+          "url('/hero-gradient-bg.jpg'),linear-gradient(90deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%)",
       },
       keyframes: {
         fadeIn: {
