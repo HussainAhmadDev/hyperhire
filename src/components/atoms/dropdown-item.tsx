@@ -1,12 +1,9 @@
-import React from "react";
+import { DetailedHTMLProps, LiHTMLAttributes } from "react";
 
 const DropdownItem = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.LiHTMLAttributes<HTMLLIElement>,
-  HTMLLIElement
->) => {
+}: DetailedHTMLProps<LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>) => {
   return <li {...props}>{children}</li>;
 };
 

@@ -9,16 +9,18 @@ export default {
   theme: {
     extend: {
       animation: {
-        "fade-in": "fadeIn var(--tw-duration, 1s) ease both",
-        "fade-in-up": "fadeInUp var(--tw-duration, 1s) ease both",
+        "fade-in": "fadeIn 500ms ease both",
+        "fade-in-up": "fadeInUp 500ms ease both",
+        "fade-in-with-delay": "fadeIn 500ms ease 800ms both",
       },
       colors: {
         background: "var(--background)",
         gradientStart: "var(--hero-gradient-start)",
         gradientEnd: "var(--hero-gradient-end)",
         brand: "var(--brand-color)",
-        "brand-gray-100": "#C1C5CF",
-        "brand-gray-200": "#5E626F",
+        "brand-cyan-100": "var(--brand-cyan-100)",
+        "brand-gray-100": "var(--brand-gray-100)",
+        "brand-gray-200": "var(--brand-gray-200)",
       },
       backgroundImage: {
         "hero-gradient":

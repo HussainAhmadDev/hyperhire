@@ -1,6 +1,6 @@
-import React from "react";
+import { SVGProps } from "react";
 
-const MarketingIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const MarketingIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="32"

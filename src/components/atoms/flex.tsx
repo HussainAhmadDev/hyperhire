@@ -1,10 +1,8 @@
 import { cn } from "@/utils";
+import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface FlexProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  > {
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   justify?: "start" | "center" | "end" | "between" | "around";
   align?: "start" | "center" | "end";
   direction?: "row" | "col";
@@ -12,7 +10,7 @@ interface FlexProps
   gap?: number;
 }
 
-const Flex: React.FC<FlexProps> = ({
+const Flex = ({
   children,
   justify = "start",
   align = "start",
@@ -21,7 +19,7 @@ const Flex: React.FC<FlexProps> = ({
   gap = 0,
   className = "",
   ...props
-}) => {
+}: FlexProps) => {
   return (
     <div
       className={cn(

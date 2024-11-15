@@ -1,6 +1,6 @@
-import React from "react";
+import { SVGProps } from "react";
 
-const HamburgerIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const HamburgerIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="16"

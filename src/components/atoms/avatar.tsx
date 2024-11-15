@@ -1,6 +1,6 @@
 import { cn } from "@/utils";
 import Image from "next/image";
-import React, { ComponentProps } from "react";
+import { ComponentProps } from "react";
 
 interface AvatarProps extends ComponentProps<typeof Image> {
   size?: number;

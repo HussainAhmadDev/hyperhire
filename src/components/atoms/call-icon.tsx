@@ -1,6 +1,6 @@
-import React from "react";
+import { SVGProps } from "react";
 
-const CallIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const CallIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width={32}

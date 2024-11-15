@@ -1,19 +1,20 @@
 import React from "react";
-import { Flex } from "../atoms";
+import { Flex, Tooltip } from "../atoms";
 import Link from "next/link";
 import { DetailCard } from "./detail-card";
 
 const HeroDetails = () => {
   return (
     <Flex className="max-sm:w-full max-lg:w-2/3 w-1/2" gap={4} direction="col">
-      <Flex
-        className="py-14 animate-fade-in-up duration-500"
-        gap={4}
-        direction="col"
-      >
-        <h1 className="max-sm:text-4xl text-5xl font-black text-white">
-          최고의 실력을 가진 외국인 인재를 찾고 계신가요?
-        </h1>
+      <Flex className="py-14 animate-fade-in-up" gap={4} direction="col">
+        <Tooltip
+          title="풀타임, 파트타임"
+          className="text-brand-cyan-100 animate-fade-in-with-delay"
+        >
+          <h1 className="max-sm:text-4xl text-5xl font-black text-white">
+            최고의 실력을 가진 외국인 인재를 찾고 계신가요?
+          </h1>
+        </Tooltip>
         <h3 className="max-sm:text-lg text-2xl font-black text-white">
           법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.
         </h3>
@@ -24,10 +25,7 @@ const HeroDetails = () => {
           개발자가 필요하신가요?
         </Link>
       </Flex>
-      <Flex
-        className="max-sm:hidden gap-2 animate-fade-in duration-500"
-        justify="between"
-      >
+      <Flex className="max-sm:hidden gap-2 animate-fade-in" justify="between">
         <DetailCard
           title="평균 월 120만원"
           content="임금을 해당 국가를 기준으로 계산합니다."
