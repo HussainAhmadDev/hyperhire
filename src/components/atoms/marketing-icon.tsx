@@ -1,6 +1,6 @@
 import React from "react";
 
-const MarketingIcon = () => {
+const MarketingIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="32"
@@ -8,6 +8,7 @@ const MarketingIcon = () => {
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M27 4.11621H5C3.3457 4.11621 2 5.46191 2 7.11621V23.1162C2 24.7705 3.3457 26.1162 5 26.1162H9V26.8838C9 27.436 9.44775 27.8838 10 27.8838H22C22.5522 27.8838 23 27.436 23 26.8838V26.1162H27C28.6543 26.1162 30 24.7705 30 23.1162V7.11621C30 5.46191 28.6543 4.11621 27 4.11621ZM28 23.1162C28 23.6675 27.5513 24.1162 27 24.1162H23V23.3481C23 22.7959 22.5522 22.3481 22 22.3481H10C9.44775 22.3481 9 22.7959 9 23.3481V24.1162H5C4.44873 24.1162 4 23.6675 4 23.1162V7.11621C4 6.56494 4.44873 6.11621 5 6.11621H27C27.5513 6.11621 28 6.56494 28 7.11621V23.1162ZM11 25.8838V24.3481H21V25.8838H11Z"
@@ -21,4 +22,4 @@ const MarketingIcon = () => {
   );
 };
 
-export default MarketingIcon;
+export { MarketingIcon };

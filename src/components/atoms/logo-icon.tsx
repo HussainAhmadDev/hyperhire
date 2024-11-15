@@ -1,13 +1,14 @@
 import React from "react";
 
-const LogoIcon = () => {
+const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width="187"
-      height="34"
+      width={187}
+      height={34}
       viewBox="0 0 187 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <g clipPath="url(#clip0_2_7916)">
         <path

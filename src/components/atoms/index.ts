@@ -11,3 +11,7 @@ export * from "./container";
 export * from "./flex";
 export * from "./sperator";
 export * from "./hamburger-icon";
+export * from "./marketing-icon";
+export * from "./image-icon";
+export * from "./box-icon";
+export * from "./call-icon";

@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroDetails, SwiperHero } from "../molecules";
+import { HeroDetails, ServicesCarousel } from "../molecules";
 import { Container } from "../atoms";
 
 const HeroSection = () => {
@@ -9,7 +9,7 @@ const HeroSection = () => {
         <HeroDetails />
         <div className="flex-1" />
       </Container>
-      <SwiperHero />
+      <ServicesCarousel />
     </>
   );
 };
