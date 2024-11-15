@@ -19,6 +19,7 @@ interface TooltipProps
   arrowPlacement?: ArrowPlacement;
   tooltipClassName?: string;
   arrowClassName?: string;
+  containerClassName?: string;
 }
 const Tooltip = ({
   title,
@@ -28,13 +29,18 @@ const Tooltip = ({
   arrowPlacement = "center",
   tooltipClassName,
   arrowClassName,
+  containerClassName,
   ...props
 }: TooltipProps) => {
+  if (!title) {
+    return children;
+  }
+
   return (
-    <div className="group relative">
+    <div className={cn("group relative", containerClassName)}>
       <Flex
         className={cn(
-          "invisible absolute group-hover:visible bottom-[calc(100%+16px)]",
+          "invisible absolute left-0 right-0 w-fit group-hover:visible bottom-[calc(100%+16px)]",
           {
             visible: defualtOpen,
           },

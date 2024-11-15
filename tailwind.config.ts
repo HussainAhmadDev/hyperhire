@@ -26,7 +26,7 @@ export default {
         "brand-gray-400": "var(--brand-gray-400)",
         "brand-blue-100": "var(--brand-blue-100)",
         "brand-green-100": "var(--brand-green-100)",
-        "brand-green-200": "var(--brand-green-100)",
+        "brand-green-200": "var(--brand-green-200)",
       },
       backgroundImage: {
         "hero-bg":

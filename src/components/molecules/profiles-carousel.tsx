@@ -1,11 +1,18 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectCoverflow } from "swiper/modules";
 import { ProfileCard } from "./profile-card";
 import { Flex } from "../atoms";
+import { useState } from "react";
 
 const ProfilesCarousel = () => {
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const handleSlideChange = (swiper: SwiperClass) => {
+    setActiveIndex(swiper.activeIndex);
+  };
+
   return (
     <Flex className="h-fit w-full max-w-[600px] m-auto">
       <Swiper
@@ -26,16 +33,13 @@ const ProfilesCarousel = () => {
         navigation
         modules={[Pagination, Navigation, EffectCoverflow]}
         className="max-sm:!p-10 max-sm:!py-20 !py-20"
+        onSlideChange={handleSlideChange}
       >
-        <SwiperSlide>
-          <ProfileCard {...profile} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProfileCard {...profile} />
-        </SwiperSlide>{" "}
-        <SwiperSlide>
-          <ProfileCard {...profile} />
-        </SwiperSlide>
+        {[...Array(3)].map((_, key) => (
+          <SwiperSlide key={key}>
+            <ProfileCard {...profile} active={key === activeIndex} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Flex>
   );
@@ -53,4 +57,5 @@ const profile = {
   ],
   tooltipTitle: "월 100만원",
 };
+
 export { ProfilesCarousel };
