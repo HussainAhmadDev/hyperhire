@@ -21,6 +21,9 @@ export default {
         "brand-cyan-100": "var(--brand-cyan-100)",
         "brand-gray-100": "var(--brand-gray-100)",
         "brand-gray-200": "var(--brand-gray-200)",
+        "brand-gray-300": "var(--brand-gray-300)",
+        "brand-gray-400": "var(--brand-gray-400)",
+        "brand-blue-100": "var(--brand-blue-100)",
       },
       backgroundImage: {
         "hero-bg": "url('/hero-gradient-bg.jpg')",

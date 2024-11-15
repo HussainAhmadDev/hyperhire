@@ -1,5 +1,10 @@
 "use client";
-import { HeroDetails, ProfilesCarousel, ServicesCarousel } from "../molecules";
+import {
+  HeroDetails,
+  ProfilesCarousel,
+  ServiceCheckboxs,
+  ServicesCarousel,
+} from "../molecules";
 import { Container, Flex } from "../atoms";
 
 const HeroSection = () => {
@@ -9,6 +14,7 @@ const HeroSection = () => {
         <HeroDetails />
         <ProfilesCarousel />
       </Container>
+      <ServiceCheckboxs />
       <ServicesCarousel />
     </Flex>
   );

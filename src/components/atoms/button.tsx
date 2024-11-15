@@ -18,7 +18,7 @@ const Button = ({
   return (
     <button
       className={cn(
-        "text-brand px-3 text-base flex justify-center transition-all gap-1 items-center py-1.5 rounded-lg font-black",
+        "text-brand px-3 text-base flex select-none justify-center transition-all gap-1 items-center py-1.5 rounded-lg font-black",
         `${variantStyles[variant]}`,
         className
       )}

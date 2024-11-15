@@ -17,7 +17,7 @@ const ServicesCarousel = () => {
     <Container aligned="right" className="max-lg:hidden">
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={4.5}
+        slidesPerView={2.5}
         spaceBetween={10}
         loop={true}
         autoplay={{
@@ -25,7 +25,7 @@ const ServicesCarousel = () => {
           disableOnInteraction: false,
         }}
         breakpoints={{
-          1024: {
+          1280: {
             slidesPerView: 4.5,
           },
         }}

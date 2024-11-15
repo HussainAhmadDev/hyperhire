@@ -9,6 +9,9 @@
   --brand-cyan-100: #40e2e8;
   --brand-gray-100: #c1c5cf;
   --brand-gray-200: #5e626f;
+  --brand-gray-300: #e8ecff;
+  --brand-gray-400: #e8ecff;
+  --brand-blue-100: #2c599b;
   --swiper-navigation-color: #fff;
   --swiper-navigation-size: 26px !important;
 }
@@ -25,4 +28,32 @@ body {
 .swiper-button-next {
   position: absolute;
   right: 0 !important;
+}
+
+.checkbox-mark {
+  @apply peer-checked:after:absolute 
+         peer-checked:after:top-0.5 
+         peer-checked:after:left-1.5 
+         peer-checked:after:w-[5px] 
+         peer-checked:after:h-2.5 
+         peer-checked:after:border 
+         peer-checked:after:border-t-0 
+         peer-checked:after:border-r-2 
+         peer-checked:after:border-b-2 
+         peer-checked:after:border-l-0 
+         peer-checked:after:rotate-45 
+         peer-checked:after:border-brand-blue-100 
+         peer-checked:border-brand-gray-300 
+         peer-checked:bg-brand-gray-400 
+         relative 
+         inline-block 
+         w-5 
+         h-5 
+         mr-3 
+         border-2 
+         border-brand-gray-300 
+         rounded-md 
+         text-brand-blue-100 
+         transition-all 
+         duration-300;
 }

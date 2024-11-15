@@ -19,3 +19,4 @@ export * from "./target-icon";
 export * from "./avatar";
 export * from "./flag-icon";
 export * from "./tooltip";
+export * from "./checkbox";
