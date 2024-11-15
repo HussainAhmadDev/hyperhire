@@ -1,4 +1,4 @@
-import { Avatar, Button, Flex } from "../atoms";
+import { Avatar, Button, FlagIcon, Flex } from "../atoms";
 
 interface ProfileCardProps {
   picture: string;
@@ -18,7 +18,13 @@ const ProfileCard = ({
       className={"bg-white w-full rounded-lg shadow-lg p-6 gap-4"}
       direction="col"
     >
-      <Avatar src={picture} alt={name} size={120} className="m-auto" />
+      <div className="relative inline-block">
+        <Avatar src={picture} alt={name} size={120} className="m-auto" />
+        <div className="w-[120px] absolute bottom-1 right-0.5">
+          <FlagIcon />
+        </div>
+      </div>
+
       <h3 className="text-2xl font-black text-center">{name}</h3>
       <p className="text-brand text-center font-black">{experience}</p>
       <Flex gap={2} wrap justify="center">
