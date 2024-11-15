@@ -14,7 +14,7 @@ const FooterCards = ({ Icon, title }: FooterCardsProps) => {
       </Flex>
       <Button
         className="text-gray-600 text-sm w-fit px-0 hover:bg-transparent"
-        variant="text"
+        variant="texted"
       >
         바로가기
         <ArrowIcon />
