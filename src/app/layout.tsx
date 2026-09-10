@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import { PropsWithChildren } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
+import "./globals.css";
 
-const popoing = Poppins({
+const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
   variable: "--font-poppins",
@@ -15,14 +15,29 @@ const popoing = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Hyperhire",
-  description: "Hyperhire",
+  title: {
+    default: "Hyperhire",
+    template: "%s | Hyperhire",
+  },
+  description:
+    "Hyperhire connects businesses with talented professionals to build and scale their teams.",
+  metadataBase: new URL("https://hyperhire.com"),
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Hyperhire",
+    description:
+      "Hyperhire connects businesses with talented professionals to build and scale their teams.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={`${popoing.variable} antialiased`}>{children}</body>
+      <body className={`${poppins.variable} antialiased`}>{children}</body>
     </html>
   );
 }
